@@ -1,0 +1,10 @@
+.chat .chat__body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.chat .chat__item-logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+/*# sourceMappingURL=chat.css.map */

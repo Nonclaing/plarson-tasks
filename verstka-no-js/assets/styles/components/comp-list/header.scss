@@ -1,0 +1,101 @@
+// Хедер
+.header {
+  position: relative;
+
+  width: 100%;
+  min-height: 5rem;
+
+  background-color: $dark-bg;
+  border-bottom: .1rem solid $light-bg;
+
+  // Контейнер хедера
+  .header__container {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  // Тело хедера
+  .header-body {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    // Отступ для всех элементов кроме последнего в теле хедера (отступ между тайтлом и ссылками)
+    &>*:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    // Тайтл хедера
+    .header-body__title {
+      display: flex;
+      align-items: center;
+    }
+
+    // Фотография человека
+    .header-body__logo {
+      position: relative;
+      width: 4rem;
+      height: 4rem;
+
+      border-radius: 50%;
+      overflow: hidden;
+
+      // Отступ картинки от имени если картинка не одна в блоке
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+
+    // Имя человека
+    .header-body__text {
+      span {
+        font-size: 2.4rem;
+      }
+    }
+
+    // Блок ссылок
+    .header-body__nav {
+      display: flex;
+      align-items: center;
+      flex: 1 1 auto;
+
+      // Отступ между разными блоками ссылок
+      &>*:not(:last-child) {
+        margin: 0 1rem 0 0;
+      }
+
+    }
+
+    // Список ссылок
+    .header-body__nav-list {
+      display: flex;
+      flex-wrap: wrap;
+
+        // Элемент ссылки
+        li {
+          display: flex;
+          font-size: 1.7rem;
+          font-weight: 600;
+
+          // Отступ между ссылками в списке
+          &:not(:last-child) {
+            margin-right: .5rem;
+          }
+
+          // Ссылка
+          a {
+            display: flex;
+            align-items: center;
+          }
+        }
+    }
+
+    // Ссылка на выход
+    .header-body__nav-exit {
+      justify-self: end;
+      margin-left: auto;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
+}

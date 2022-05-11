@@ -1,0 +1,56 @@
+// Список участников
+.user-list {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 1rem 0 0;
+  border-right: 1px solid $light-bg;
+
+  // Тайтл списка
+  .user-list__title {
+    font-size: 2.4rem;
+
+    // Отступ тайтла от тела
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  // Тело списка
+  .user-list__body {
+
+  }
+
+  // Список участников
+  .user-list__list {
+    height: 100%;
+
+    // Отсутпы между элементами списка
+    &>*:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Элемент списка
+  .user-list__list-item {
+    display: flex;
+    align-items: center;
+
+  }
+
+  // Фото участника
+  .user-list__item-logo {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+
+  // Имя участника
+  .user-list__item-text {
+    font-size: 1.5rem;
+    color: $light-brown;
+  }
+}

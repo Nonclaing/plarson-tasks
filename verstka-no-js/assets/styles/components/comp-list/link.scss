@@ -1,0 +1,25 @@
+// Ссылки на странице
+.link {
+  color: $dark-brown;
+  transition: .3s ease;
+
+  // Посещённая ссылка
+  &:visited {
+    color: $dark-brown;
+  }
+
+  // Наведение на ссылку
+  &:hover {
+    color: $light-brown;
+  }
+
+  // Выключенная ссылка
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+    color: $light-bg;
+    &:hover {
+      color: $light-bg;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.main-content .main-content__container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "user-list chat";
+  align-items: center;
+}
+
+/*# sourceMappingURL=main-content.css.map */

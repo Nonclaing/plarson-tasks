@@ -1,0 +1,56 @@
+// Чат
+.chat {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  // Тайтл чата
+  .chat__title {
+    padding: 1rem;
+    h4 {
+      font-size: 3rem;
+    }
+  }
+
+  // Тело чата
+  .chat__body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  // Список сообщений в чате
+  .chat__list {
+
+  }
+
+  // Сообщение в чате
+  .chat__list-item {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  // Лого в сообщении
+  .chat__item-logo {
+    width: 3rem;
+
+  }
+
+  // Тело сообщения
+  .chat__item-body {
+    flex: 1 1 100%;
+  }
+
+  // Имя автора сообщения
+  .chat__item-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  // Текст сообщения
+  .chat__item-text {
+    color: $light-green;
+  }
+
+}

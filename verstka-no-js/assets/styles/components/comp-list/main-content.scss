@@ -1,0 +1,32 @@
+// Контейнеры для главного контента
+.main-content{
+  height: 100%;
+
+  // Контейнер с сеткой
+  .main-content__container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "user-list chat";
+    align-items: center;
+    
+    @media (max-width: convertPx-em(500)) {
+      grid-template-columns: 15rem 1fr;
+    }
+
+    // Элемент сетки юзеры
+    .main-content__user-list {
+      align-self: stretch;
+      grid-area: user-list;
+    }
+
+    // Элемент сетки чат
+    .main-content__chat {
+      align-self: stretch;
+      grid-area: chat;
+    }
+  }
+}

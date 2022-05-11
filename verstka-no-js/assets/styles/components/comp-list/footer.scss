@@ -1,0 +1,45 @@
+// Футтер
+.footer {
+  min-height: 10rem;
+  margin-top: 1rem;
+
+  // Контейнер для футтера
+  .footer__container {
+
+  }
+
+  // Тело футтера
+  .footer__body {
+    padding-bottom: 1rem;
+  }
+
+  // Блок для ввода текста
+  .footer__input {
+    display: flex;
+
+    // Инпут
+    input {
+      flex: 1 1 100%;
+      font-size: 3rem;
+      background-color: $light-bg;
+      padding: 1rem;
+      &::placeholder {
+        color: $light-brown;
+        font-size: inherit;
+      }
+    }
+  }
+
+  // Кнопка отправки
+  .footer__input-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-green;
+    color: black;
+    font-size: 4rem;
+    @media (max-width: convertPx-em(768)) {
+      font-size: 2rem;
+    }
+  }
+}

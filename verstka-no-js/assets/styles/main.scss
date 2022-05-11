@@ -1,0 +1,40 @@
+// Файл для подключения к index.html
+
+// Подколючения
+@import "utils/params"; // Переменные цветов и функции
+@import "utils/null-style"; // Обнуляющий стиль
+@import "components/components"; // Компоненты
+
+
+//
+body, html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  font-weight: 400;
+  background-color: $dark-bg;
+  color: $light-orange;
+}
+
+// Контрейнер для коннтента
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+  .wrapper__content {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+
+// Контейнер ограничивающий размер страницы
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 118rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
