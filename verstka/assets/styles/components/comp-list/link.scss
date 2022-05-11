@@ -1,0 +1,19 @@
+.link {
+  color: $dark-brown;
+  transition: .3s ease;
+  &:visited {
+    color: $dark-brown;
+  }
+  &:hover {
+    color: $light-brown;
+  }
+
+  &.disabled {
+    cursor: default;
+    pointer-events: none;
+    color: $light-bg;
+    &:hover {
+      color: $light-bg;
+    }
+  }
+}

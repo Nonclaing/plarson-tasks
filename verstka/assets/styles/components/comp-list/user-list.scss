@@ -1,0 +1,45 @@
+.user-list {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 1rem 0 0;
+  border-right: 1px solid $light-bg;
+  .user-list__title {
+    font-size: 2.4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .user-list__body {
+
+  }
+
+  .user-list__list {
+    height: 100%;;
+    &>*:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .user-list__list-item {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .user-list__item-logo {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    &:not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+  
+  .user-list__item-text {
+    font-size: 1.5rem;
+    color: $light-brown;
+  }
+}

@@ -1,0 +1,28 @@
+.main-content{
+  height: 100%;
+
+  .main-content__container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "user-list chat";
+    align-items: center;
+    
+    @media (max-width: convertPx-em(500)) {
+      grid-template-columns: 15rem 1fr;
+    }
+
+    .main-content__user-list {
+      align-self: stretch;
+      grid-area: user-list;
+    }
+
+    .main-content__chat {
+      align-self: stretch;
+      grid-area: chat;
+    }
+  }
+}

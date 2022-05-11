@@ -1,0 +1,41 @@
+.footer {
+  min-height: 10rem;
+  margin-top: 1rem;
+  .footer__container {
+
+  }
+
+  .footer__body {
+    padding-bottom: 1rem;
+  }
+
+  .footer__input {
+    display: flex;
+
+    input {
+      flex: 1 1 100%;
+      font-size: 3rem;
+      background-color: $light-bg;
+      padding: 1rem;
+      &::placeholder {
+        color: $light-brown;
+        font-size: inherit;
+      }
+      @media (max-width: convertPx-em(768)) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .footer__input-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $light-green;
+    color: black;
+    font-size: 4rem;
+    @media (max-width: convertPx-em(768)) {
+      font-size: 2rem;
+    }
+  }
+}

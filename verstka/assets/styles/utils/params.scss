@@ -1,0 +1,11 @@
+$dark-bg: #151515;
+$light-bg: #424242;
+$light-orange: #c7493a;
+$dark-orange: #a33327;
+$light-green: #689775;
+$light-brown: #ad8174;
+$dark-brown: #917164;
+
+@function convertPx-em($px) {
+  @return $px / 16 + 'em';
+}
